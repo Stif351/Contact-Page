@@ -123,3 +123,33 @@ footer {
     text-decoration: none;
     color: var(--link-footer);
 }
+
+@media screen and (min-width: 860px) {
+    .container {
+        max-width: 816px;
+    }
+    h1{
+        font-size: 4rem;
+    }
+   .title p{
+        font-size: 2rem;
+    }
+    .title {
+        width: 39.75rem;
+        margin: 0 auto;
+    }
+    .contact-form{
+        grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    }
+    .message{
+        grid-column: span 2;
+
+    }
+    textarea {
+        height: 13rem;
+    }
+    .btn{
+        grid-column: span 2;
+    }
+
+}
