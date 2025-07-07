@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 :root {
     --primary-1: #4036A9;
     --primary-2: #B4436D;
@@ -23,12 +22,13 @@ body {
     color: var(--header-text);
     background-image: linear-gradient(var(--primary-2), var(--primary-1));
     background-repeat: no-repeat;
-
 }
-h1{
+
+h1 {
     font-size: 2rem;
     padding-bottom: 1.5rem;
 }
+
 p {
     color: var(--text);
 }
@@ -36,12 +36,14 @@ p {
 .container {
     max-width: 388px;
     margin: 1rem auto;
-    /*background-image: url("../resources/background.svg");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
 }
+
+.logo {
+    height: 2rem;
+}
+
 .title {
-text-align: center;
+    text-align: center;
     padding: 4rem 0;
 }
 
@@ -57,6 +59,7 @@ text-align: center;
 label {
     display: block;
     font-size: 0.875rem;
+    margin-bottom: 0.5rem;
 }
 
 abbr {
@@ -73,8 +76,8 @@ textarea {
     border: 0;
     outline: none;
 }
-select {
 
+select {
     appearance: none;
     -webkit-appearance: none;
     background-image: url('../resources/Expand_down.svg');
@@ -83,7 +86,7 @@ select {
     background-repeat: no-repeat;
 }
 
-.btn{
+.btn {
     padding: 28px;
     border-radius: 20px;
     border: 0;
@@ -92,10 +95,10 @@ select {
     font-weight: bold;
     font-size: 1.25rem;
 }
-.btn:hover{
+
+.btn:hover {
     box-shadow: inset 2px 2px 4px #4036A9;
 }
-
 
 /* ================  FOOTER  ============== */
 
@@ -103,7 +106,6 @@ footer {
     max-width: 275px;
     margin: 0 auto;
     padding: 3rem 0;
-
 }
 
 .attribution {
@@ -128,27 +130,79 @@ footer {
     .container {
         max-width: 816px;
     }
-    h1{
+
+    h1 {
         font-size: 4rem;
     }
-   .title p{
+
+    .title p {
         font-size: 2rem;
     }
+
     .title {
         width: 39.75rem;
         margin: 0 auto;
     }
-    .contact-form{
+
+    .contact-form {
         grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
     }
-    .message{
-        grid-column: span 2;
 
+    .message {
+        grid-column: span 2;
     }
+
     textarea {
         height: 13rem;
     }
-    .btn{
+
+    .btn {
+        grid-column: span 2;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        position: relative;
+    }
+
+    .container {
+
+        max-width: 816px;
+    }
+
+    .logo {
+        position: absolute;
+        left: 10vw;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .title p {
+        font-size: 2rem;
+    }
+
+    .title {
+        width: 39.75rem;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
+    }
+
+    .message {
+        grid-column: span 2;
+    }
+
+    textarea {
+        height: 13rem;
+    }
+
+    .btn {
         grid-column: span 2;
     }
 
